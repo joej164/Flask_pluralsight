@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Joe Thermos -- Add a URL
+{% endblock %}
+
+{% block content %}
+<article>
+    <h1>Add a new URL</h1>
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        <table>
+            <tr>
+                <td>Please enter your bookmark here:</td>
+                <td>{{form.url(size=50)}}</td>
+            </tr>
+            <tr>
+                <td>Add an optional description</td>
+                <td>{{form.description(size=50)}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="Submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</article>
+{% endblock %}
+
+
+{% block sidebar %}
+{% endblock %}
